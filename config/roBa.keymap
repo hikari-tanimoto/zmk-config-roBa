@@ -87,10 +87,10 @@
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &none                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE       &kp CARET        &kp AMPERSAND
-&kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &none     &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION       &kp AT_SIGN            &kp HASH        &kp DOLLAR       &kp PERCENT
-&kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp ASTERISK     &kp SLASH        &kp PLUS  &kp MINUS      &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&trans           &trans           &trans           &trans           &trans    &trans         &trans          &trans                                                                        &kp PIPE
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &none                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE       &kp CARET        &kp AMPERSAND
+&kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp EQUAL  &none          &kp UNDERSCORE  &kp EXCLAMATION       &kp AT_SIGN            &kp HASH        &kp DOLLAR       &kp PERCENT
+&kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp ASTERISK     &kp SLASH        &kp PLUS   &kp MINUS      &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&trans           &trans           &trans           &trans           &trans     &trans         &trans          &trans                                                                        &kp PIPE
             >;
         };
 
