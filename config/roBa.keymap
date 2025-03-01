@@ -39,6 +39,11 @@
             bindings = <&kp Q>;
             key-positions = <0 1>;
         };
+
+        y {
+            bindings = <&kp Y>;
+            key-positions = <3 4>;
+        };
     };
 
     macros {
