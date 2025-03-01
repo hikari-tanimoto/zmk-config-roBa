@@ -66,44 +66,33 @@
 
         default_layer {
             bindings = <
-&kp SQT           &kp W        &kp E            &kp R             &kp T                                         &kp U            &kp I  &kp O      &kp P                       &kp AMPERSAND
-&kp A             &kp S        &kp D            &kp F             &kp G           &none            &kp B        &kp H            &kp K  &kp L      &mt LEFT_CONTROL SEMICOLON  &kp TAB
-&mt LEFT_SHIFT Z  &kp X        &kp C            &kp V             &mt LEFT_ALT J  &kp Y            &kp SLASH    &kp N            &kp M  &kp COMMA  &kp PERIOD                  &kp GRAVE
-&mkp LCLK         &kp AT_SIGN  &kp EXCLAMATION  &kp LEFT_COMMAND  &kp SPACE       &lt 3 MINUS      &lt 2 ENTER  &lt 1 BACKSPACE                                                &kp HASH
+&kp SQT    &kp W        &kp E            &kp R               &kp T                                                    &kp U            &kp I  &kp O      &kp P                       &kp AMPERSAND
+&kp A      &kp S        &kp D            &kp F               &kp G                 &none                 &kp B        &kp H            &kp K  &kp L      &mt LEFT_CONTROL SEMICOLON  &kp TAB
+&kp Z      &kp X        &kp C            &kp V               &kp J                 &kp Y                 &kp SLASH    &kp N            &kp M  &kp COMMA  &kp PERIOD                  &kp GRAVE
+&mkp LCLK  &kp AT_SIGN  &kp EXCLAMATION  &mt LEFT_ALT SPACE  &mt LEFT_SHIFT MINUS  &kp LEFT_COMMAND      &lt 2 ENTER  &lt 1 BACKSPACE                                                &kp HASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        SYMBOL {
+        ARROW-SYMBOL {
             bindings = <
-&none   &none   &none   &none   &none                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp PIPE     &none
-&none   &none   &none   &none   &none   &none       &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp PERCENT  &none
-&none   &none   &none   &none   &none   &none       &kp EQUAL       &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp AMPERSAND  &kp BSLH     &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans                                                                   &none
+&none   &none           &none           &none            &none                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp PIPE     &none
+&none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none   &none       &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp PERCENT  &none
+&none   &none           &kp DOWN_ARROW  &none            &none   &none       &kp EQUAL       &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp AMPERSAND  &kp BSLH     &none
+&trans  &trans          &trans          &trans           &trans  &trans      &trans          &trans                                                                   &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
-        NUM {
+        FUNCTIONS-NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                               &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none
-&trans  &trans  &trans  &trans  &trans  &trans      &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans      &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans      &trans           &trans                                                           &none
+&trans  &kp F1  &kp F2   &kp F3   &trans                                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none
+&kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans      &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &kp PLUS
+&kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp SLASH
+&trans  &trans  &trans   &trans   &trans   &trans      &trans           &trans                                                           &none
             >;
-        };
-
-        ARROW-FUNCTIONS {
-            bindings = <
-&none   &kp F1  &kp F2   &kp F3   &trans                       &trans          &trans          &trans           &trans  &trans
-&kp F4  &kp F5  &kp F6   &kp F7   &none    &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
-&kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &trans  &trans          &kp DOWN_ARROW  &trans           &trans  &trans
-&trans  &trans  &trans   &trans   &trans   &trans      &trans  &trans                                                   &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
     };
 };
