@@ -31,13 +31,28 @@
         };
 
         f12 {
-            bindings = <&none>;
+            bindings = <&kp F12>;
             key-positions = <8 9>;
         };
 
         q {
             bindings = <&kp Q>;
             key-positions = <0 1>;
+        };
+
+        desktop {
+            bindings = <&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS>;
+            key-positions = <5 6 7>;
+        };
+
+        toggle-layer-1 {
+            bindings = <&tog 1>;
+            key-positions = <5 6>;
+        };
+
+        toggle-layer-2 {
+            bindings = <&tog 2>;
+            key-positions = <17 18>;
         };
     };
 
@@ -66,10 +81,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_SHIFT SQT  &kp W        &kp E            &kp R               &kp T                                         &kp U            &kp I  &kp O      &kp P                       &kp AMPERSAND
-&kp A               &kp S        &kp D            &kp F               &kp G      &none                 &kp B        &kp H            &kp K  &kp L      &mt LEFT_CONTROL SEMICOLON  &kp TAB
-&kp Z               &kp X        &kp C            &kp V               &kp Y      &kp J                 &kp SLASH    &kp N            &kp M  &kp COMMA  &kp PERIOD                  &kp GRAVE
-&mkp LCLK           &kp AT_SIGN  &kp EXCLAMATION  &mt LEFT_ALT MINUS  &kp SPACE  &kp LEFT_COMMAND      &lt 2 ENTER  &lt 1 BACKSPACE                                                &kp POUND
+&kp SQT    &kp W        &kp E            &kp R               &kp T                                         &kp U            &kp I  &kp O      &kp P                       &kp TAB
+&kp A      &kp S        &kp D            &kp F               &kp G      &none                 &kp B        &kp H            &kp K  &kp L      &mt LEFT_CONTROL SEMICOLON  &kp RIGHT_SHIFT
+&kp Z      &kp X        &kp C            &kp V               &kp Y      &kp J                 &kp SLASH    &kp N            &kp M  &kp COMMA  &kp PERIOD                  &kp GRAVE
+&mkp LCLK  &kp AT_SIGN  &kp EXCLAMATION  &mt LEFT_ALT MINUS  &kp SPACE  &kp LEFT_COMMAND      &lt 2 ENTER  &lt 1 BACKSPACE                                                &kp POUND
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -77,7 +92,7 @@
 
         ARROW-SYMBOL {
             bindings = <
-&none   &none           &none           &none            &none                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp PIPE     &none
+&none   &none           &none           &none            &none                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp CARET    &none
 &none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none   &none       &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp PERCENT  &none
 &none   &none           &kp DOWN_ARROW  &none            &none   &none       &kp EQUAL       &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp AMPERSAND  &kp BSLH     &none
 &trans  &trans          &trans          &trans           &trans  &trans      &trans          &trans                                                                   &none
@@ -88,10 +103,10 @@
 
         FUNCTIONS-NUM {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &trans                                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none
-&kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans      &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS     &kp PLUS
-&kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp SLASH
-&trans  &trans  &trans   &trans   &trans   &trans      &trans           &trans                                                           &none
+&trans  &kp F1  &kp F2   &kp F3   &trans                          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &none
+&kp F4  &kp F5  &kp F6   &kp F7   &trans   &trans      &kp PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &kp EQUAL
+&kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &none
+&trans  &trans  &trans   &trans   &trans   &trans      &trans     &trans                                                              &none
             >;
         };
     };
