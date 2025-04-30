@@ -82,8 +82,8 @@
 
         ARROW-SYMBOL {
             bindings = <
-&none   &none           &none           &none            &none                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp CARET    &none
-&none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none    &none                 &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp PERCENT  &kp RIGHT_SHIFT
+&none   &none           &none           &none            &none                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp PERCENT  &kp CARET
+&none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none    &none                 &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp HASH     &kp RIGHT_SHIFT
 &none   &none           &kp DOWN_ARROW  &none            &none    &none                 &kp EQUAL       &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp AMPERSAND  &kp BSLH     &none
 &trans  &trans          &trans          &kp LEFT_ALT     &kp TAB  &kp LEFT_COMMAND      &trans          &trans                                                                   &none
             >;
