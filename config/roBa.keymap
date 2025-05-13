@@ -71,10 +71,10 @@
 
         default_layer {
             bindings = <
-&kp LEFT_SHIFT  &kp W        &kp E            &kp R             &kp T                                     &kp U            &kp I  &kp O      &kp P                       &kp MINUS
-&kp A           &kp S        &kp D            &kp F             &kp G      &none             &kp B        &kp H            &kp K  &kp L      &mt LEFT_CONTROL SEMICOLON  &kp GRAVE
-&kp Z           &kp X        &kp C            &kp V             &kp J      &kp SQT           &kp Y        &kp N            &kp M  &kp COMMA  &kp PERIOD                  &kp SLASH
-&mkp LCLK       &kp AT_SIGN  &kp EXCLAMATION  &kp LEFT_COMMAND  &kp SPACE  &kp LEFT_ALT      &lt 2 ENTER  &lt 1 BACKSPACE                                                &kp POUND
+&kp F12    &kp W             &kp E           &kp R             &kp T                                     &kp U            &kp I  &kp O      &kp P          &kp MINUS
+&kp A      &kp S             &kp D           &kp F             &kp G      &none             &kp B        &kp H            &kp K  &kp L      &kp SEMICOLON  &kp GRAVE
+&kp Z      &kp X             &kp C           &kp V             &kp J      &kp SQT           &kp Y        &kp N            &kp M  &kp COMMA  &kp PERIOD     &kp SLASH
+&mkp LCLK  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp SPACE  &kp LEFT_ALT      &lt 2 ENTER  &lt 1 BACKSPACE                                   &kp POUND
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -82,10 +82,10 @@
 
         ARROW-SYMBOL {
             bindings = <
-&none   &none           &none           &none            &none                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp PERCENT  &kp CARET
-&none   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none    &none                 &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp HASH     &kp RIGHT_SHIFT
-&none   &none           &kp DOWN_ARROW  &none            &none    &none                 &kp EQUAL       &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp AMPERSAND  &kp BSLH     &none
-&trans  &trans          &trans          &kp LEFT_ALT     &kp TAB  &kp LEFT_COMMAND      &trans          &trans                                                                   &none
+&none     &none           &none           &none         &none                                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE              &kp MINUS              &none
+&kp EXCL  &kp AT_SIGN     &kp HASH        &kp DOLLAR    &kp PERCENT      &none                 &kp CARET       &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none                 &kp LEFT_SHIFT  &kp MINUS         &kp EQUAL          &kp BACKSLASH         &none                  &none
+&trans    &trans          &trans          &kp LEFT_ALT  &kp TAB          &kp LEFT_COMMAND      &trans          &trans                                                                            &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
@@ -93,10 +93,10 @@
 
         FUNCTIONS-NUM {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3        &trans                                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &kp EQUAL
-&kp F4  &kp F5  &kp F6   &kp F7        &trans   &trans                &kp PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &kp RIGHT_SHIFT
-&kp F8  &kp F9  &kp F10  &kp F11       &kp F12  &trans                &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &none
-&trans  &trans  &trans   &kp LEFT_ALT  &trans   &kp LEFT_COMMAND      &trans     &trans                                                              &none
+&kp F1           &kp F2           &kp F3           &kp F4           &kp F5                                                  &kp F6           &kp F7     &kp F8           &kp F9           &kp F10
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans                &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp F11
+&none            &none            &kp ASTERISK     &kp SLASH        &none            &trans                &kp LEFT_SHIFT   &kp MINUS        &kp PLUS   &none            &none            &none
+&trans           &trans           &trans           &kp LEFT_ALT     &trans           &kp LEFT_COMMAND      &trans           &trans                                                        &none
             >;
         };
     };
