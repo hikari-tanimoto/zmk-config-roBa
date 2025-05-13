@@ -22,17 +22,12 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
-        dev-tool {
-            bindings = <&kp LA(LG(I))>;
-            key-positions = <8 9>;
+            key-positions = <10 11>;
         };
 
         q {
             bindings = <&kp Q>;
-            key-positions = <10 11>;
+            key-positions = <0 1>;
         };
 
         desktop {
