@@ -68,7 +68,7 @@
             bindings = <
 &kp F12    &kp W             &kp E           &kp R             &kp T                                     &kp U            &kp I  &kp O      &kp P          &kp MINUS
 &kp A      &kp S             &kp D           &kp F             &kp G      &none             &kp B        &kp H            &kp K  &kp L      &kp SEMICOLON  &kp GRAVE
-&kp Z      &kp X             &kp C           &kp V             &kp J      &kp SQT           &kp Y        &kp N            &kp M  &kp COMMA  &kp PERIOD     &kp SLASH
+&kp Z      &kp X             &kp C           &kp V             &kp Y      &kp SQT           &kp J        &kp N            &kp M  &kp COMMA  &kp PERIOD     &kp SLASH
 &mkp LCLK  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp SPACE  &kp LEFT_ALT      &lt 2 ENTER  &lt 1 BACKSPACE                                   &kp POUND
             >;
 
